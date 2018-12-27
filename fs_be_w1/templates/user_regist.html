@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    {% for message in get_flashed_messages(category_filter=['error'])%}
+    <h3 style="color:red">{{ message }}</h3>
+    {% endfor %}
+    {% for message in get_flashed_messages(category_filter=['okey'])%}
+    <h3 style="color:blue">{{ message }}</h3>
+    {% endfor %}
+    <form role="form" method="post" class="col-md-6 col-lg-offset-2">
+        <div class=" form-group">
+            <label for="user_name">昵称</label>
+            <input type="text" id="user_name" name="user_name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="user_pwd">密码</label>
+            <input type="password" id="user_pwd" name="user_pwd" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="user_email">邮箱</label>
+            <input type="email" id="user_email" name="user_email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="user_age">年龄</label>
+            <input type="number" id="user_age" name="user_age" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="user_birthday">生日</label>
+            <input type="date" id="user_birthday" name="user_birthday" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="user_face">头像</label>
+            <input type="file" id="user_face" name="user_face" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn-primary" name="submit" value="注册">
+        </div>
+        </div>
+    </form>
+
+{% endblock %}

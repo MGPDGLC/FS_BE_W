@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap FLASK</title>
+    <!-- Bootstrap -->
+    <link href="{{ url_for("static", filename="bootstrap/bootstrap.min.css") }}" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+    <h1 class="page-header">你好，FLASK</h1>
+    <form role="form" method="post" class="col-md-5 col-md-offset-3">
+        <div class="form-group">
+            <label for="user_name">用户昵称</label>
+            <input type="text" id="user_name" name=" user_name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="user_pwd">用户密码</label>
+            <input type="password" id="user_pwd" name="user_pwd" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="user_email">用户邮箱</label>
+            <input type="email" id="user_email" name="user_email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="user_age">用户年龄</label>
+            <input type="number" id="user_age" name="user_age" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="user_group">用户生日</label>
+            <input type="date" id="user_birthday" name="user_birthday" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="user_face">用户头像</label>
+            <input type="file" id="user_face" name="user_face" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn-success" name="submit" value="提交表单">
+        </div>
+    </form>
+</div>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="{{ url_for("static", filename="jquery/jquery.min.js") }}"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="{{ url_for("static", filename="bootstrap/bootstrap.min.js") }}"></script>
+</body>
+</html>
