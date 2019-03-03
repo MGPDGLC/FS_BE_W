@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="jumbotron" style="padding: 5px 20px">
+        <h2>{{ session.get("user_email") }}的个人中心</h2>
+    </div>
+    <div>
+        {% include "user_menu.html" %}
+
+        <div class="col-md-10">
+            <div class="jumbotron">
+                <h1>注销账号</h1>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+
+{% block js_code %}
+    <script>
+        $(document).ready(
+            function () {
+                $("#item-8").addClass('list-group-item-success')
+            }
+        );
+    </script>
+{% endblock %}
+

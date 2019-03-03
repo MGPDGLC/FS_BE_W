@@ -7,12 +7,13 @@
     <!-- Bootstrap -->
     <link href="{{ url_for("static", filename="bootstrap/bootstrap.min.css") }}" rel="stylesheet">
 </head>
+
 <body>
 
 <div class="container">
 
     <!-- Static navbar -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" style="margin-top: 10px">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -26,13 +27,17 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="{{ url_for("index") }}">首页</a></li>
-                    <li><a href="{{ url_for("bbs") }}">留言板</a></li>
+                    <li id="nav-1"><a href="{{ url_for("index") }}">首页</a></li>
+                    <li id="nav-2"><a href="{{ url_for("bbs") }}">留言板</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="{{ url_for("user_login") }}">登录</a></li>
-                    <li><a href="{{ url_for("user_regist") }}">注册</a></li>
-                    <li><a href="{{ url_for("logout") }}">退出</a></li>
+                    {% if "user_email" in session %}
+                        <li id="nav-3"><a href="{{ url_for("user_center") }}">个人中心</a></li>
+                        <li id="nav-4"><a href="{{ url_for("logout") }}">退出</a></li>
+                    {% else %}
+                        <li id="nav-5"><a href="{{ url_for("user_login") }}">登录</a></li>
+                        <li id="nav-6"><a href="{{ url_for("user_regist") }}">注册</a></li>
+                    {% endif %}
                 </ul>
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
@@ -48,5 +53,10 @@
 <script src="{{ url_for("static", filename="jquery/jquery.min.js") }}"></script>
 <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 <script src="{{ url_for("static", filename="bootstrap/bootstrap.min.js") }}"></script>
+
+{% block js_code %}
+
+{% endblock %}
+
 </body>
 </html>

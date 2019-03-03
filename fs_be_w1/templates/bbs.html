@@ -16,3 +16,14 @@
         </div>
     {% endfor %}
 {% endblock %}
+
+
+{% block js_code %}
+    <script>
+        $(document).ready(
+            function () {
+                $("#nav-2").addClass('active')
+            }
+        );
+    </script>
+{% endblock %}

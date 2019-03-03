@@ -1,7 +1,7 @@
 # coding: utf8
 from model import User
 import sqlite3
-from flask import Flask, request, session, g, redirect, url_for, abort, render_template, flash
+from flask import Flask, request, session, g, redirect, url_for, abort, render_template, flash, make_response
 import os
 import sys
 import click
@@ -10,6 +10,7 @@ from flask_wtf import FlaskForm
 from wtforms import SubmitField, TextAreaField
 from wtforms.validators import DataRequired
 from functools import wraps
+
 app = Flask(__name__)
 
 app.config["DATABASE"] = 'database.db'
@@ -109,17 +110,16 @@ def update_user_by_email(old_email, user):
 def user_login_reg(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if"user_email"not in session:
-            return redirect(url_for("user_login",next=request.url))
+        if "user_email" not in session:
+            return redirect(url_for("user_login", next=request.url))
         return f(*args, **kwargs)
-    return decorated_function
 
+    return decorated_function
 
 
 @app.route('/')
 @user_login_reg
 def index():
-    print(session)
     return render_template('index.html')
 
 
@@ -171,13 +171,49 @@ def user_regist():
     return render_template('user_regist.html')
 
 
+@app.route('/center/')
+@user_login_reg
+def user_center():
+    return render_template("user_center.html")
+
+
+@app.route('/detail/')
+@user_login_reg
+def user_detail():
+    return render_template("user_detail.html")
+
+
+@app.route('/pwd/')
+@user_login_reg
+def user_pwd():
+    return render_template("user_pwd.html")
+
+
+@app.route('/logoff/')
+@user_login_reg
+def user_logoff():
+    return render_template("user_logoff.html")
+
+
+@app.route('/upinform/')
+@user_login_reg
+def user_upinform():
+    return render_template("user_upinform.html")
+
+
+@app.errorhandler(404)
+def page_not_found(error):
+    resp = make_response(render_template('page_not_found.html'), 404)
+    resp.headers['X-Something'] = 'enm'
+    return resp
+
+
 # SQLite URI compatible
 WIN = sys.platform.startswith('win')
 if WIN:
     prefix = 'sqlite:///'
 else:
     prefix = 'sqlite:////'
-
 
 app.jinja_env.trim_blocks = True
 app.jinja_env.lstrip_blocks = True
@@ -283,4 +319,3 @@ def delete_note(note_id):
 
 if __name__ == '__main__':
     app.run()
-

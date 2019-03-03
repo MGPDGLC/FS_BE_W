@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    {% for message in get_flashed_messages(category_filter=['error'])%}
-    <h3 style="color:red">{{ message }}</h3>
+    {% for message in get_flashed_messages(category_filter=['error']) %}
+        <h3 style="color:red">{{ message }}</h3>
     {% endfor %}
-    {% for message in get_flashed_messages(category_filter=['okey'])%}
-    <h3 style="color:blue">{{ message }}</h3>
+    {% for message in get_flashed_messages(category_filter=['okey']) %}
+        <h3 style="color:blue">{{ message }}</h3>
     {% endfor %}
     <form role="form" method="post" class="col-md-6 col-lg-offset-2">
         <div class=" form-group">
@@ -38,4 +38,15 @@
         </div>
     </form>
 
+{% endblock %}
+
+
+{% block js_code %}
+    <script>
+        $(document).ready(
+            function () {
+                $("#nav-6").addClass('active')
+            }
+        );
+    </script>
 {% endblock %}
