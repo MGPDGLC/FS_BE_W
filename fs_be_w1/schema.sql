@@ -5,6 +5,6 @@ create table users(
   pwd string not null,
   email string not null,
   age integer not null,
-  birthday DATA not null,
+  birthday DATE not null,
   face string
 );

@@ -50,7 +50,6 @@
     </column>
     <index id="28" parent="6" name="ix_article_title">
       <ColNames>title</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="29" parent="6">
       <ColNames>id</ColNames>
@@ -95,7 +94,6 @@
     <index id="38" parent="8" name="sqlite_autoindex_author_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="39" parent="8">
@@ -121,7 +119,6 @@
     </column>
     <index id="44" parent="9" name="ix_book_name">
       <ColNames>name</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="45" parent="9">
       <ColNames>id</ColNames>
@@ -148,7 +145,6 @@
     <index id="50" parent="10" name="sqlite_autoindex_capital_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="51" parent="10">
@@ -180,7 +176,6 @@
     <index id="57" parent="11" name="sqlite_autoindex_citizen_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="58" parent="11">
@@ -208,7 +203,6 @@
     <index id="63" parent="12" name="sqlite_autoindex_city_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="64" parent="12">
@@ -253,7 +247,6 @@
     <index id="73" parent="14" name="sqlite_autoindex_country_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="74" parent="14">
@@ -323,7 +316,6 @@
     <index id="89" parent="18" name="sqlite_autoindex_singer_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="90" parent="18">
@@ -349,7 +341,6 @@
     </column>
     <index id="95" parent="19" name="ix_song_name">
       <ColNames>name</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="96" parent="19">
       <ColNames>id</ColNames>
@@ -396,7 +387,6 @@
     <index id="106" parent="21" name="sqlite_autoindex_student_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="107" parent="21">
@@ -423,7 +413,6 @@
     <index id="112" parent="22" name="sqlite_autoindex_teacher_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="113" parent="22">
@@ -446,7 +435,6 @@
     <index id="117" parent="23" name="sqlite_autoindex_writer_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="118" parent="23">
