@@ -87,7 +87,6 @@ def delete_user_by_email(user_email):
     delete_sql = "DELETE FROM users WHERE email=?"
     args = [user_email]
     g.db.execute(delete_sql, args)
-    g.db.commit()
 
 
 def update_user_by_email(old_email, user):

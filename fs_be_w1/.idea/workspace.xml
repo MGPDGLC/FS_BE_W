@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c21586c-79a3-4d82-8cb3-29fcb4c55489" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dbdd465c-a10e-4142-8628-67ca5d0d7be3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dbdd465c-a10e-4142-8628-67ca5d0d7be3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fs_be_w1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fs_be_w1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="1320">
+              <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
               <folding>
                 <element signature="e#15#37#0" expanded="true" />
               </folding>
@@ -132,8 +128,8 @@
         <option value="$PROJECT_DIR$/templates/user_pwd.html" />
         <option value="$PROJECT_DIR$/templates/user_upinform.html" />
         <option value="$PROJECT_DIR$/templates/user_logoff.html" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/schema.sql" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -337,12 +333,13 @@
       <workItem from="1555745020567" duration="777000" />
       <workItem from="1555816525229" duration="2635000" />
       <workItem from="1555830550385" duration="44000" />
-      <workItem from="1555832356570" duration="1436000" />
+      <workItem from="1555832356570" duration="2198000" />
+      <workItem from="1555836198862" duration="69000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121374000" />
+    <option name="totallyTimeSpent" value="122205000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -356,7 +353,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1030" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991453" visible="true" weight="0.12513426" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991453" visible="true" weight="0.12674543" />
       <window_info id="Structure" order="1" sideWeight="0.50085473" side_tool="true" weight="0.07626209" />
       <window_info id="Favorites" order="2" sideWeight="0.6" side_tool="true" weight="0.43447906" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -370,7 +367,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3298731" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.28258362" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2848904" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3298731" />
       <window_info anchor="bottom" id="调试" order="13" />
       <window_info active="true" anchor="bottom" id="Database Console" order="14" visible="true" weight="0.3298731" />
@@ -576,8 +573,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="1320">
+          <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
           <folding>
             <element signature="e#15#37#0" expanded="true" />
           </folding>
